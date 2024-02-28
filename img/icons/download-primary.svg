@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Сгруппировать_372" data-name="Сгруппировать 372" transform="translate(-784.5 -14)">
+    <g id="Прямоугольник_74" data-name="Прямоугольник 74" transform="translate(784.5 14)" fill="#fff" stroke="#849362" stroke-width="1">
+      <rect width="28" height="28" rx="14" stroke="none"/>
+      <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="none"/>
+    </g>
+    <g id="Сгруппировать_218" data-name="Сгруппировать 218" transform="translate(147.8 -546.541)">
+      <path id="Контур_328" data-name="Контур 328" d="M232.928,313.766a.818.818,0,0,1,0,1.156h0a.818.818,0,0,1-1.157,0l-5.5-5.495a.818.818,0,0,1,0-1.157h0a.819.819,0,0,1,1.157,0Z" transform="translate(418.178 266.094)" fill="#849362"/>
+      <path id="Контур_329" data-name="Контур 329" d="M6.891,5.735a.818.818,0,0,1,0,1.156h0a.818.818,0,0,1-1.157,0L.239,1.4A.818.818,0,0,1,.239.24h0A.819.819,0,0,1,1.4.239Z" transform="translate(657.367 574.126) rotate(90)" fill="#849362"/>
+      <path id="Объединение_1" data-name="Объединение 1" d="M0,13.606,0,5.835c0-.015,0-.03,0-.045V.817a.818.818,0,0,1,1.636,0V13.608a.817.817,0,1,1-1.634,0Z" transform="translate(649.973 566.967)" fill="#849362" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

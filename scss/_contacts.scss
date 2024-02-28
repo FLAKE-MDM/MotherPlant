@@ -1,0 +1,77 @@
+.contacts-section {
+  margin-bottom: 4rem;
+
+  @include bp(md) {
+    margin: 0;
+  }
+
+  &__content {
+    margin-top: -0.2rem;
+
+    @include bp(md) {
+      display: grid;
+      grid-template-columns: 30.5% 27.2% auto;
+      grid-gap: 0.4rem 3rem;
+      letter-spacing: 0.06rem;
+      padding-left: 0.1rem;
+      margin-bottom: 3.9rem;
+    }
+
+    @include bp(xs) {
+      display: block;
+    }
+  }
+
+  &__title {
+    @include bp(md) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__group {
+    margin-bottom: 2.2rem;
+
+    @include bp(md) {
+      &.w-100 {
+        grid-column: span 3;
+      }
+    }
+
+    p {
+      margin: 0;
+
+      @include bp(md) {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
+  &__form {
+    width: 44.4rem;
+    max-width: 100%;
+
+    .title {
+      @include bp(md) {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.map {
+  height: 45.4rem;
+
+  @include bp(md) {
+    order: -1;
+    margin-bottom: 3.3rem;
+    height: 25rem;
+  }
+
+  @include bp(sm) {
+    margin: 0 -3.5rem 3.3rem;
+  }
+}
+
+.dropdown-city {
+  padding: 1.2rem;
+}

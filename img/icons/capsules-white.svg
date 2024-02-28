@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20.233" viewBox="0 0 19 20.233">
+  <g id="Сгруппировать_279" data-name="Сгруппировать 279" transform="translate(0.35 0.35)">
+    <rect id="Прямоугольник_173" data-name="Прямоугольник 173" width="8.777" height="3.184" transform="translate(1.382)" fill="#fff" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+    <rect id="Прямоугольник_174" data-name="Прямоугольник 174" width="8.096" height="6.39" transform="translate(3.6 8.205)" fill="#fff" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+    <path id="Контур_444" data-name="Контур 444" d="M343.155,1773.471v13.805a.818.818,0,0,1-.856.768h-9.983a.818.818,0,0,1-.856-.768v-13.805l2.943-1.48h5.809Z" transform="translate(-331.46 -1768.723)" fill="#fff" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+    <rect id="Прямоугольник_175" data-name="Прямоугольник 175" width="11.696" height="6.39" transform="translate(0 8.205)" fill="#fff" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+    <line id="Линия_255" data-name="Линия 255" x2="11.695" transform="translate(0 17.724)" fill="none" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+    <g id="Сгруппировать_272" data-name="Сгруппировать 272" transform="translate(13.523 9.223)">
+      <g id="Сгруппировать_271" data-name="Сгруппировать 271" transform="translate(0 0)">
+        <path id="Контур_445" data-name="Контур 445" d="M397.056,1801.158v5.533a2.388,2.388,0,1,1-4.776,0v-5.533a2.388,2.388,0,0,1,4.776,0Z" transform="translate(-392.28 -1798.77)" fill="#fff" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+        <line id="Линия_256" data-name="Линия 256" y1="0.244" transform="translate(0 2.144)" fill="none" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+        <line id="Линия_257" data-name="Линия 257" y1="0.35" transform="translate(4.776 7.921)" fill="none" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+        <line id="Линия_258" data-name="Линия 258" x2="4.776" transform="translate(0 5.155)" fill="none" stroke="#9f8849" stroke-miterlimit="10" stroke-width="0.7"/>
+      </g>
+    </g>
+  </g>
+</svg>

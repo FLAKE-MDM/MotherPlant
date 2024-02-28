@@ -1,0 +1,280 @@
+.footer {
+  padding: 6.5rem 0 2.7rem;
+  margin-top: auto;
+  color: #a8a8a8;
+  letter-spacing: 0.055rem;
+
+  @include bp(sm) {
+    padding-bottom: 5.1rem;
+  }
+
+  &__link {
+    color: #a8a8a8;
+
+    @include bp(hv) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  @include bp(md) {
+  }
+
+  &__logo {
+    margin-left: -0.4rem;
+
+    @include bp(sm) {
+      margin-left: 2.2rem;
+    }
+
+    @include bp(xs) {
+      margin: 0 auto 2rem;
+    }
+  }
+
+  &__top {
+    @include bp(xs) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__middle {
+    border-top: 1px solid #3f3d3d;
+    border-bottom: 1px solid #3f3d3d;
+    margin: 2.9rem 0 2.8rem;
+    padding: 3.3rem 0 0.4rem;
+    display: grid;
+    grid-template-columns: 21.5% 24% auto;
+    grid-gap: 2rem;
+
+    @include bp(lg) {
+      grid-template-columns: 21.5% 27% auto;
+    }
+
+    @include bp(sm) {
+      grid-template-columns: 100%;
+      padding-bottom: 4.2rem;
+    }
+  }
+
+  &__row {
+    @include bp(xs) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+
+  &__bottom {
+    border-bottom: 1px solid #3f3d3d;
+    margin-bottom: 2.3rem;
+    padding-bottom: 1rem;
+
+    @include bp(xl-up) {
+      padding-right: 16%;
+    }
+
+    @include bp(sm) {
+      letter-spacing: 0.025rem;
+      padding-bottom: 2.3rem;
+      margin-bottom: 4.1rem;
+    }
+  }
+
+  &__col {
+    display: grid;
+    grid-template-columns: 32.5% 38.5% auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 13.5%;
+
+    @include bp(lg) {
+      padding-left: 0;
+    }
+  }
+
+  &__btn {
+    margin: 0.1rem -0.1rem 0 0;
+
+    @include bp(sm) {
+      margin: 0 0.1rem 0 auto;
+
+      .btn {
+        padding: 0.3rem 2.4rem 0.6rem;
+      }
+    }
+
+    @include bp(xs) {
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    grid-column: span 3;
+    margin-top: 5.8rem;
+
+    @include bp(sm) {
+      margin-top: 1.5rem;
+    }
+
+    .phone {
+      margin: 0 5.5rem 0 -0.3rem;
+
+      @include bp(sm) {
+        padding-left: 2.1rem;
+        padding-right: 4.6%;
+
+        &::before {
+          top: 0.6rem;
+          left: 0.3rem;
+        }
+      }
+
+      @include bp(sm) {
+        margin: 0;
+      }
+    }
+
+    address {
+      font-style: normal;
+      margin-top: 1.6rem;
+
+      @include bp(sm) {
+        margin-top: 2.9rem;
+      }
+
+      @include bp(xs) {
+        text-align: center;
+      }
+    }
+  }
+
+  &-nav {
+    &_icons {
+      margin-top: -0.3rem;
+
+      .footer-nav__item {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    &_margin {
+      .footer-nav__item {
+        margin-bottom: 2.2rem;
+      }
+    }
+
+    &_horizontal {
+      padding-bottom: 0.8rem;
+
+      .footer-nav__item {
+        position: relative;
+        margin-right: 3rem;
+
+        &:not(:last-child) {
+          &:after {
+            content: "";
+            display: block;
+            width: 0.1rem;
+            height: 1.2rem;
+            background: #a8a8a8;
+            right: -1.6rem;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    &__item {
+      margin-bottom: 1.9rem;
+    }
+
+    &__link {
+      color: #a8a8a8;
+
+      @include bp(hv) {
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    &__icon {
+      width: 2.4rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__social-list {
+    margin: 0 -0.1rem 0.8rem 0;
+    align-self: flex-end;
+
+    @include bp(sm) {
+      margin: 0 0.1rem -0.5rem 0;
+    }
+
+    @include bp(xs) {
+      align-self: center;
+    }
+  }
+}
+
+.email {
+  display: inline-flex;
+  border-bottom: 1px solid $primary;
+  padding-bottom: 0.2rem;
+
+  @include bp(sm) {
+    align-self: flex-start;
+  }
+
+  @include bp(xs) {
+    align-self: center;
+  }
+}
+
+.social-list {
+  gap: 0 1.65rem;
+
+  &__link {
+    &.icon-email {
+      margin-right: 0.2rem;
+    }
+
+    @include bp(hv) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.producer {
+  padding-top: 0.2rem;
+
+  @include bp(sm) {
+    padding-top: 0.1rem;
+  }
+
+  a {
+    display: inline-flex;
+    margin-left: 0.4rem;
+
+    @include bp(sm) {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.copyright {
+  @include bp(xs) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

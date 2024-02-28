@@ -1,0 +1,297 @@
+.review {
+  &-section {
+    margin-bottom: 10.4rem;
+
+    &_margin {
+      margin-bottom: 18.3rem;
+    }
+
+    @include bp(md) {
+      margin-bottom: 0;
+    }
+
+    .container {
+      @include bp(md) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  &-slider {
+    padding-right: 17%;
+    overflow: visible;
+    padding-top: 0.6rem;
+
+    @include bp(lg) {
+      padding-right: 0;
+    }
+
+    @include bp(md) {
+      padding: 0 10%;
+    }
+
+    @include bp(sm) {
+      padding: 0 21% 0 0;
+      margin-top: -1.3rem;
+    }
+
+    @include bp(xs) {
+      padding: 0 10%;
+    }
+
+    .swiper-slide {
+      height: auto;
+      display: flex;
+    }
+  }
+
+  &-item {
+    border: 1px solid #e3e3e3;
+    border-radius: 0.9rem;
+    transition: all 0.3s ease-out;
+    padding: 2.8rem 1.6rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -0.1rem;
+      right: -0.1rem;
+      left: -0.1rem;
+      background: $primary;
+      border-radius: 0.9rem 0.9rem 0 0;
+      height: 1.6rem;
+    }
+
+    @include bp(md) {
+    }
+
+    @include bp(sm) {
+    }
+
+    &__image {
+      border: 1px solid #e3e3e3;
+      flex-shrink: 0;
+      margin: 0.3rem 2.6rem 0 0;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+
+      @include bp(md) {
+        margin-left: 0.2rem;
+      }
+
+      @include bp(xs) {
+        margin: 0 auto 1rem;
+      }
+    }
+
+    &__rating {
+    }
+
+    &__date {
+      color: #b4b4b4;
+    }
+
+    &__from {
+      letter-spacing: 0.07rem;
+    }
+
+    &__body {
+      margin-top: 2rem;
+
+      @include bp(xs) {
+        flex-direction: column;
+      }
+    }
+
+    &__name {
+    }
+
+    &__footer {
+      margin-top: 2.1rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+
+  &-info {
+    padding-top: 0.3rem;
+
+    @include bp(md) {
+      padding-top: 0;
+      letter-spacing: 0.055rem;
+      line-height: 2.4rem;
+    }
+
+    &__content {
+      width: 53.6rem;
+      max-width: 100%;
+      padding-top: 0.9rem;
+
+      @include bp(md) {
+        padding: 1.2rem 1.4rem 0 0;
+      }
+
+      &_padding {
+        @include bp(md) {
+          padding-top: 2.7rem;
+
+          .average-rating {
+            margin-top: 3.8rem;
+          }
+        }
+      }
+    }
+
+    &__rating {
+      width: 100%;
+      margin-bottom: 1.8rem;
+
+      @include bp(md) {
+        width: auto;
+        margin: 0 0 -0.4rem;
+      }
+    }
+
+    .btn {
+      margin-top: 0.4rem;
+    }
+  }
+
+  &-block {
+    padding: 2.6rem 0;
+    border-bottom: 1px solid #e6e6e6;
+    display: grid;
+    grid-template-columns: 16.9rem 53%;
+    grid-gap: 0rem 4.9rem;
+    grid-template-rows: auto auto;
+    position: relative;
+    margin-bottom: 0.7rem;
+
+    @include bp(md) {
+      grid-template-columns: 8rem auto;
+      grid-gap: 0 1.9rem;
+      padding: 1.7rem 0;
+      margin-bottom: 0.9rem;
+    }
+
+    &__image {
+      grid-row: span 2;
+      align-self: flex-start;
+      border: 1px solid #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.2rem;
+
+      @include bp(md) {
+        grid-row: span 1;
+        margin-top: 0.4rem;
+      }
+    }
+
+    &__rating {
+      @include bp(md) {
+        margin: 0 0 0 auto;
+      }
+    }
+
+    &__date {
+      color: #b4b4b4;
+      margin-left: 1.8rem;
+      letter-spacing: 0.04rem;
+
+      @include bp(md) {
+        margin: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+
+      @include bp(md) {
+        margin: 0.9rem 0 0;
+        letter-spacing: 0.025rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    &__link {
+      @include bp(lg-up) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: 2.2rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+
+    &__text {
+      margin-top: 1.3rem;
+
+      @include bp(md) {
+        grid-column: span 2;
+      }
+
+      p {
+        @include bp(md) {
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+
+    &__name {
+      letter-spacing: 0.055rem;
+    }
+  }
+
+  &-form {
+    width: 62.8rem;
+    max-width: 100%;
+    margin: 8rem 0 23rem;
+
+    @include bp(md) {
+      margin: 5.2rem 0 10.5rem;
+    }
+
+    textarea.form-control {
+      padding-top: 0.9rem;
+      min-height: 20.2rem;
+    }
+  }
+}
+
+.average-rating {
+  letter-spacing: 0.035rem;
+
+  @include bp(md) {
+    order: 2;
+    display: flex;
+    align-items: baseline;
+    margin-top: 2.3rem;
+  }
+
+  .title {
+    margin-bottom: 0.7rem;
+
+    @include bp(md) {
+      margin: 0 1.6rem 0 0;
+      position: relative;
+      bottom: -0.7rem;
+    }
+  }
+}
+
+.sort-rating {
+  margin: 5.9rem 0 4.1rem;
+
+  @include bp(md) {
+    margin: 4.6rem 0 2.7rem;
+  }
+}

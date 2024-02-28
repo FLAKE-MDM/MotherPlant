@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mother Plant</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <a href="#" class="pane-close pane-close__link"></a>
+      <!-- header -->
+      <header class="header">
+        <div class="header-top bg_dark">
+          <div class="container">
+            <div class="d-flex justify-content-end">
+              <ul class="header-top-nav d-none d-lg-flex text_size-sm">
+                <li class="header-top-nav__item">
+                  <a href="#" class="header-top-nav__link"
+                    ><span class="icon icon-map header-top-nav__icon icon_double"></span>Магазины</a
+                  >
+                </li>
+                <li class="header-top-nav__item">
+                  <a href="#" class="header-top-nav__link">Сертификаты</a>
+                </li>
+                <li class="header-top-nav__item">
+                  <a href="#" class="header-top-nav__link">Партнёрская программа</a>
+                </li>
+                <li class="header-top-nav__item">
+                  <a href="#" class="header-top-nav__link">FAQ</a>
+                </li>
+                <li class="header-top-nav__item">
+                  <a href="#" class="header-top-nav__link">Информация</a>
+                </li>
+              </ul>
+              <a href="tel:88005501982" class="phone text_styling text_inversion text_light">8 (800) 550-19-82</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header-middle d-flex justify-content-between">
+            <a href="#naigation" class="btn-menu d-lg-none pane-open">
+              <div class="btn-menu__item"></div>
+              <div class="btn-menu__item"></div>
+              <div class="btn-menu__item"></div>
+            </a>
+            <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="" class="img-fluid" /></a>
+            <div class="header__content d-flex">
+              <div class="search__wrap">
+                <div class="search collapse">
+                  <form action="#" class="d-flex">
+                    <input type="text" class="search__input" placeholder="Поиск по каталогу продукции и статьям..." />
+                    <button class="search__btn">
+                      <span class="icon icon-search-inversion"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="pane naigation pane_left" id="naigation">
+                <nav class="navbar">
+                  <!-- navbar__header -->
+                  <div class="navbar__header d-flex d-lg-none">
+                    <a href="index.html" class="logo navbar__logo"
+                      ><img src="img/logo-vertical.svg" alt="" class="img-fluid"
+                    /></a>
+                    <ul class="nav-links">
+                      <li class="nav-links__item"><a href="tel:88005501982">8 (800) 550-19-82</a></li>
+                      <li class="nav-links__item"><a href="#">Партнёрам</a></li>
+                      <li class="nav-links__item">
+                        <a href="#" class="d-inline-flex align-items-center">
+                          <span class="icon icon-map-dark nav-links__icon icon_double"></span>Магазины
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /navbar__header -->
+                  <!-- nav-list -->
+                  <ul class="nav-list d-lg-flex">
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link dropdown-toggle text_styling dropdown__toggle_nav">Каталог</a>
+                      <!-- dropdown-menu -->
+                      <div class="dropdown-menu dropdown-menu_large">
+                        <div class="container">
+                          <div class="dropdown-menu__content">
+                            <div class="dropdown-menu__col">
+                              <div class="title mb-sm text_dark title_size-md d-none d-lg-block">Каталог продкуции</div>
+                              <ul class="footer-nav footer-nav_icons">
+                                <li class="footer-nav__item d-lg-none">
+                                  <a href="#" class="footer-nav__link dropdown-close dropdown__close"></a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                                    <div class="footer-nav__icon"><span class="icon icon-oil"></span></div>
+                                    CBD масло
+                                  </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                                    <div class="footer-nav__icon">
+                                      <span class="icon icon-capsules icon-capsules_white"></span>
+                                    </div>
+                                    CBD капсулы
+                                  </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                                    <div class="footer-nav__icon"><span class="icon icon-products"></span></div>
+                                    CBD функциональные продукты
+                                  </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                                    <div class="footer-nav__icon">
+                                      <span class="icon icon-chocolate icon-chocolate_white"></span>
+                                    </div>
+                                    CBD какао и шоколад
+                                  </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                                    <div class="footer-nav__icon">
+                                      <span class="icon icon-cosmetics icon-cosmetics_white"></span>
+                                    </div>
+                                    СBD косметика и уход за телом
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="dropdown-menu__col d-none d-lg-block">
+                              <div class="blog-item">
+                                <a href="article.html" class="title text_dark mb-xs d-inline-flex title_size-md"
+                                  >Что такое CBD</a
+                                >
+                                <a href="article.html" class="blog-item__image zoom-link mb-xs">
+                                  <img src="img/content/article-4.jpg" alt="" class="img-fluid d-block" />
+                                </a>
+                                <a href="article.html" class="title title_size-sm text_secondary m-0">читать →</a>
+                              </div>
+                            </div>
+                            <div class="dropdown-menu__col d-none d-lg-block">
+                              <div class="blog-item">
+                                <a href="calculator.html" class="title text_dark mb-xs d-inline-flex title_size-md"
+                                  >Калькулятор дозировки</a
+                                >
+                                <a href="calculator.html" class="blog-item__image zoom-link mb-xs">
+                                  <img src="img/content/article-5.jpg" alt="" class="img-fluid d-block" />
+                                </a>
+                                <a href="calculator.html" class="title title_size-sm text_secondary m-0">расчитать →</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /dropdown-menu -->
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link text_styling dropdown-toggle dropdown__toggle_nav">Бренд</a>
+                      <!-- dropdown-menu -->
+                      <div class="dropdown-menu dropdown-menu_large">
+                        <div class="container">
+                          <div class="dropdown-menu__content">
+                            <div class="dropdown-menu__col">
+                              <div class="title mb-sm text_dark title_size-md d-none d-lg-block">Бренд MotherPlant</div>
+                              <ul class="footer-nav footer-nav_margin">
+                                <li class="footer-nav__item d-lg-none">
+                                  <a href="#" class="footer-nav__link dropdown-close dropdown__close"></a>
+                                </li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сертификаты</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link">Партнёрские программы</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link">Оптовым покупателям</a>
+                                </li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">СМИ о нас</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Магазины</a></li>
+                              </ul>
+                            </div>
+                            <div class="dropdown-menu__col d-none d-lg-block">
+                              <div class="blog-item">
+                                <a href="article.html" class="title text_dark mb-xs d-inline-flex title_size-md"
+                                  >Партнёрские программы</a
+                                >
+                                <a href="article.html" class="blog-item__image zoom-link mb-xs">
+                                  <img src="img/content/article-6.jpg" alt="" class="img-fluid d-block" />
+                                </a>
+                                <a href="article.html" class="title title_size-sm text_secondary m-0">читать →</a>
+                              </div>
+                            </div>
+                            <div class="dropdown-menu__col d-none d-lg-block">
+                              <div class="blog-item">
+                                <a href="article.html" class="title text_dark mb-xs d-inline-flex title_size-md"
+                                  >Карта магазинов</a
+                                >
+                                <a href="article.html" class="blog-item__image zoom-link mb-xs">
+                                  <img src="img/content/article-7.jpg" alt="" class="img-fluid d-block" />
+                                </a>
+                                <a href="article.html" class="title title_size-sm text_secondary m-0">смотреть →</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /dropdown-menu -->
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link text_styling">Калькулятор дозировки</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link text_styling">Блог</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link text_styling active">О CBD</a>
+                    </li>
+                    <li class="nav-list__item d-lg-none">
+                      <a href="#" class="nav-list__link text_styling">FAQ</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="#" class="nav-list__link text_styling">Контакты</a>
+                    </li>
+                    <li class="nav-list__item d-lg-none">
+                      <a href="#" class="nav-list__link text_styling dropdown-toggle dropdown__toggle_nav"
+                        >Информация</a
+                      >
+                      <div class="dropdown-menu dropdown-menu_large">
+                        <div class="container">
+                          <div class="dropdown-menu__content">
+                            <div class="dropdown-menu__col">
+                              <ul class="footer-nav footer-nav_margin">
+                                <li class="footer-nav__item d-lg-none">
+                                  <a href="#" class="footer-nav__link dropdown-close dropdown__close"></a>
+                                </li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Магазины</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сертификаты</a></li>
+                                <li class="footer-nav__item">
+                                  <a href="#" class="footer-nav__link">Партнёрская программа</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- /nav-list -->
+                  <!-- navbar__footer -->
+                  <div class="navbar__footer d-lg-none">
+                    <ul class="social-list d-flex navbar__social-list">
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__link icon icon-email" target="_blank"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__link icon icon-tg" target="_blank"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__link icon icon-youtube" target="_blank"></a>
+                      </li>
+                    </ul>
+                    <p>123557, Москва, Большой Тишинский переулок, 43/20c2, этаж 3</p>
+                  </div>
+                  <!-- /navbar__footer -->
+                </nav>
+              </div>
+              <a href="#" class="search-open icon icon-search"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <!-- content -->
+      <div class="content">
+        <div class="container">
+          <!-- breadcrumb -->
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a></li>
+            <li class="breadcrumb__item">О CBD</li>
+          </ul>
+          <!-- /breadcrumb -->
+          <!-- preview-section -->
+          <div class="preview-section preview-section_about d-none d-lg-grid">
+            <div class="preview-section__text">
+              <div class="title mb-sm text_dark">О CBD</div>
+              <p>
+                MotherPlant — это высокое качество производства продуктов на каждом из этапов. Мы находим лучших
+                поставщиков сырья для нашей продукции и самостоятельно проверяем их в независимых лабораториях, чтобы
+                быть уверенными в своем продукте на 100%. Нашими поставщиками являются лучшие производители Америки и
+                Европы. А для того, чтобы сделать наши продукты максимально доступными, мы производим их в России, по
+                высшим стандартам качества.
+              </p>
+            </div>
+            <div class="preview-section__image d-none d-lg-block">
+              <img src="img/content/about.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <!-- /preview-section -->
+          <div class="d-lg-flex justify-content-between pos-rel">
+            <!-- sidebar -->
+            <div class="sidebar">
+              <a
+                href="#"
+                class="d-lg-none dropdown-toggle sidebar__dropdown-toggle dropdown__toggle title title_size-sm"
+                >ПЕРЕЧЕНЬ СТАТЕЙ</a
+              >
+              <a href="#" class="dropdown-close d-lg-none sidebar__close-full"></a>
+              <div class="sidebar__dropdown-menu dropdown-menu d-lg-block">
+                <a href="#" class="dropdown-close d-lg-none sidebar__close icon icon-close"></a>
+                <ul class="sidebar-nav floating-block floating">
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Ментальное здоровье и CBD (КБД)</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Влияние КБД на мозг</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link active"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Имеет ли масло КБД побочные эффекты?</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Безопасность и легальный статус КБД</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Каковы, преимущества КБД для здоровья</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Имеет ли масло КБД побочные эффекты</a
+                    >
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link"
+                      ><div class="sidebar-nav__link_active"></div>
+                      Безопасность и легальный статус КБД</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar -->
+            <!-- main -->
+            <main class="main main_sm main_text main_about">
+              <h1 class="title mb-sm text_dark title_size-md title_mobile">Какие преимущества КБД для здоровья</h1>
+              <p>
+                Польза каннабидиола (КБД) доказана многочисленными научными исследованиями. Областей, в которых КБД
+                успешно применяют, – огромное множество. Благодаря терапевтическим свойствам и отсутствию серьезных
+                побочных эффектов, его используют для лечения различных заболеваний, снижения стресса, облегчения боли и
+                других патологических состояний. КБД также помогает бороться с вредными привычками, улучшает
+                самочувствие пациентов и многое другое. Здесь мы собрали лишь некоторые примеры использования КБД.
+              </p>
+              <p>• Снижение тревоги и стресса</p>
+              <p>
+                Тревожное расстройство – одна из самых распространенных психических нарушений. Во всем мире от
+                тревожности страдают около 18,1% населения. Часто тревожность сопровождается хроническим стрессом,
+                подавленностью, бессонницей. КБД взаимодействует с эндоканнабиноидной системой человека таким образом,
+                что снижает беспокойство и чувство тревоги, обеспечивает хороший сон, избавляет от депрессии.
+              </p>
+              <p>• Облегчение боли</p>
+              <p>
+                Обезболивание – один из самых частых случаев использование КБД. От хронической боли страдает 11,2% всех
+                жителей Земли. Из них 17% испытывают сильные боли каждый день. Причиной боли могут быть онкологические
+                заболевания, артрит, воспаления, травмы и т.д. КБД обладает естественными болеутоляющими и
+                противовоспалительными свойствами, способными облегчить даже сильную хроническую боль.
+              </p>
+              <p>• Лечение и облегчение симптомов неврологических заболеваний</p>
+              <p>
+                Неврологические заболевания, такие как болезнь Альцгеймера, эпилепсия, рассеянный склероз, болезнь
+                Паркинсона и др., часто приводят к разрушительным последствиям для нервной системы. Недавние
+                исследования показали, что продукты с КБД уменьшают эти последствия, укрепляя нервную систему. Также КБД
+                может быть эффективен при восстановлении после химиотерапии.
+              </p>
+              <p>• Поддержание спортивной формы</p>
+              <p>
+                КБД обеспечивает оптимальную работу таких важных функций организма, как обмен веществ, иммунитет,
+                энергетический баланс. Поэтому использование КБД до или во время тренировок и соревнований помогает
+                спортсменам быстро восстанавливать и поддерживать спортивную форму. КБД может использоваться не только в
+                спорте, но и в йоге, медитации, различных духовных практиках, где важны способность расслабляться и
+                хорошее владение телом.
+              </p>
+              <p>• Лечение абстинентного синдрома при отказе от курения</p>
+              <p>
+                Абстинентный синдром, который возникает при отказе от курения, сильно снижает качество жизни. Недавние
+                исследования показали, что КБД помогает ослабить тягу к табаку, что позволит бросить курить раз и
+                навсегда.
+              </p>
+              <p>Более подробную информацию вы сможете найти в нашем блоге.</p>
+            </main>
+            <!-- /main -->
+          </div>
+          <div class="stoper"></div>
+        </div>
+      </div>
+      <!-- /content -->
+      <!-- question-section -->
+      <div class="question-section">
+        <div class="container">
+          <div class="question-section__content">
+            <div class="title text_dark mb-xs">Остались вопросы?</div>
+            <p class="mb-sm">
+              Мы собрали наиболее часто задаваемые вопросы в одном разделе. Возможно вы найдёт в нём необходимую
+              информацию.
+            </p>
+            <div class="question-section__btn">
+              <a href="#" class="btn btn_primary-second btn_radius btn_size-lg">
+                <span class="icon icon-info btn__icon"></span>Больше информации в FAQ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /question-section -->
+      <!-- footer -->
+      <footer class="footer bg_dark">
+        <div class="container">
+          <!-- footer__top -->
+          <div class="footer__top d-flex justify-content-between">
+            <a href="index.html" class="logo footer__logo"><img src="img/logo-vertical.svg" alt="" class="" /></a>
+            <ul class="social-list d-flex footer__social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link icon icon-email" target="_blank"></a>
+              </li>
+              <li class="social-list__item"><a href="#" class="social-list__link icon icon-tg" target="_blank"></a></li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link icon icon-youtube" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /footer__top -->
+          <!-- footer__middle -->
+          <div class="footer__middle">
+            <ul class="footer-nav d-none d-md-block">
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Что такое КБД</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сертификаты</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Партнёрская программа</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Калькулятор дозировки</a></li>
+            </ul>
+            <ul class="footer-nav footer-nav_icons d-none d-md-block">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                  <div class="footer-nav__icon"><span class="icon icon-oil"></span></div>
+                  CBD масло
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                  <div class="footer-nav__icon"><span class="icon icon-capsules"></span></div>
+                  CBD капсулы
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                  <div class="footer-nav__icon"><span class="icon icon-products"></span></div>
+                  CBD функциональные продукты
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                  <div class="footer-nav__icon"><span class="icon icon-chocolate"></span></div>
+                  CBD какао и шоколад
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link d-inline-flex align-items-center">
+                  <div class="footer-nav__icon"><span class="icon icon-cosmetics"></span></div>
+                  СBD косметика и уход за телом
+                </a>
+              </li>
+            </ul>
+            <div class="footer__col">
+              <ul class="footer-nav d-none d-md-block">
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Блог</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">FAQ</a></li>
+              </ul>
+              <ul class="footer-nav d-none d-md-block">
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Магазины</a></li>
+              </ul>
+              <div class="footer__btn d-none d-md-block">
+                <a href="#" class="btn btn_outline btn_size-xs text_secondary">Онлайн чат</a>
+              </div>
+              <div class="footer__contacts">
+                <div class="footer__row d-flex">
+                  <a href="tel:88005501982" class="phone text_styling text_inversion text_light">8 (800) 550-19-82</a>
+                  <a href="mailto:" class="email text_inversion">hello@motherplant.ru</a>
+                  <div class="footer__btn d-md-none">
+                    <a href="#" class="btn btn_outline btn_size-xs text_secondary">Онлайн чат</a>
+                  </div>
+                </div>
+                <address>123557, Москва, Большой Тишинский переулок, 43/20c2, этаж 3</address>
+              </div>
+            </div>
+          </div>
+          <!-- /footer__middle -->
+          <!-- footer__bottom -->
+          <div class="footer__bottom">
+            <ul class="footer-nav d-none d-md-flex footer-nav_horizontal">
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Пользовательское соглашение</a></li>
+              <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отказ от ответственности</a></li>
+            </ul>
+            <p class="text_size-sm">
+              Данный продукт не предназначен для использования или продажи лицам, не достигшим 18-летнего возраста.
+              Хранить в недоступном для детей месте. Данный продукт не должен использоваться, если вы беременны или
+              кормите грудью. Перед использованием следует проконсультироваться с врачом. Всегда консультируйтесь с
+              врачом перед использованием, если у вас есть серьезное заболевание или вы используете отпускаемые по
+              рецепту лекарства. Этот продукт не предназначен для диагностики, лечения или профилактики каких-либо
+              заболеваний. Этот продукт следует использовать только в соответствии с указаниями на этикетке. Используя
+              сайт, вы соглашаетесь с <a href="#" class="link_underline footer__link">политикой конфиденциальности</a> и
+              <a href="#" class="link_underline footer__link">пользовательским соглашением</a>.
+            </p>
+          </div>
+          <!-- /footer__bottom -->
+          <div class="copyright d-flex justify-content-between">
+            <div class="copyright">© 2023, Mother Plant</div>
+            <div class="producer">
+              Разработка сайта <a href="#" class="text_secondary link_underline">Boske Digital Agency</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script
+      async
+      src="https://usocial.pro/usocial/usocial.js?uid=5281ad69c3f28476&v=6.1.5"
+      data-script="usocial"
+      charset="utf-8"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

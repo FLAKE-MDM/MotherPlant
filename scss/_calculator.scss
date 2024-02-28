@@ -1,0 +1,129 @@
+.calculator {
+  &-form {
+    width: 73.6rem;
+    max-width: 100%;
+    margin-top: 7.1rem;
+
+    @include bp(md) {
+      margin: 4.4rem 0 4.2rem;
+      padding-right: 3.5rem;
+    }
+
+    @include bp(xs) {
+      padding-right: 0;
+    }
+
+    &__title {
+      margin-top: 6.2rem;
+
+      @include bp(md) {
+        margin-top: 3.5rem;
+      }
+
+      &.mb-xxl {
+        @include bp(md) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      margin-bottom: 6.2rem;
+
+      @include bp(md) {
+        margin-bottom: 5.6rem;
+      }
+    }
+
+    &__num {
+      width: 6.2rem;
+      height: 6.2rem;
+      margin: 0 4rem 0 0.7rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $secondary;
+      border: 1px solid $secondary;
+      flex-shrink: 0;
+
+      @include bp(md) {
+        margin: 0 1.8rem 0 0;
+      }
+
+      @include bp(xs) {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__label {
+      margin: 1.4rem 0 1.8rem;
+      letter-spacing: 0.12rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+
+      @include bp(md) {
+        margin: 2rem 0 1.8rem 0.2rem;
+      }
+
+      &-md {
+        margin-top: 0.9rem;
+
+        @include bp(md) {
+          margin: 1.5rem 0 3.3rem 0.2rem;
+
+          .form-control_radius {
+            margin-bottom: -0.5rem;
+          }
+        }
+      }
+
+      &_lg {
+        margin: 2.1rem 0 3.5rem;
+
+        @include bp(md) {
+          margin: 2.7rem 0 3.5rem 0.2rem;
+        }
+
+        @include bp(xs) {
+          margin-top: 2rem;
+        }
+      }
+
+      &_xl {
+        margin-bottom: 3.9rem;
+        margin-right: -3rem;
+
+        @include bp(md) {
+          margin-bottom: 3.1rem;
+        }
+
+        @include bp(xs) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form-group {
+      width: 100%;
+    }
+
+    .noUi-target {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.check-text {
+  @include bp(md) {
+    margin-right: -3rem;
+  }
+
+  @include bp(xs) {
+    margin-right: 0;
+  }
+}

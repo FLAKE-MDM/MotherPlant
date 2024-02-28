@@ -1,0 +1,285 @@
+.blog {
+  &-section {
+    &_margin {
+      margin-bottom: 11.4rem;
+
+      @include bp(md) {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  &-slider {
+    padding-top: 0.8rem;
+
+    @include bp(md) {
+      padding-right: 10%;
+    }
+
+    @include bp(sm) {
+      padding: 0.9rem 16% 0 13.5%;
+      overflow: visible;
+    }
+
+    @include bp(xs) {
+      padding: 0 10% 0 0;
+    }
+  }
+
+  &-item {
+    &__text {
+      margin: -2.8rem 12.5% 1.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.4rem 0.7rem;
+      background: #fff;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+      position: relative;
+
+      @include bp(lg) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      @include bp(md) {
+        margin: -2.8rem 12.5% 1.3rem;
+      }
+
+      @include bp(xs) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.4rem;
+    }
+
+    &__link {
+      margin: -0.2rem 0 0 1.7rem;
+    }
+  }
+
+  &-nav {
+    gap: 1.9rem 1.7rem;
+    padding-top: 0.5rem;
+    margin: 0 -0.4rem 5.3rem;
+
+    @include bp(xl-up) {
+      padding-right: 10%;
+    }
+
+    @include bp(md) {
+      gap: 1.9rem 1.45rem;
+      padding-top: 0;
+      margin: -1.1rem 0 3.9rem 0;
+    }
+
+    &__link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 3rem;
+      padding: 0.7rem 3.05rem;
+      border: 1px solid $secondary;
+      min-width: 9.6rem;
+
+      @include bp(hv) {
+        &:hover {
+          border-color: $primary;
+          background: $primary;
+          color: #fff;
+        }
+      }
+
+      &.active {
+        border-color: $primary !important;
+        background: $primary !important;
+        color: #fff !important;
+        padding: 0.7rem 0.8rem 0.7rem 2.6rem;
+
+        &:after {
+          display: block;
+        }
+      }
+
+      &:not(.btn):active {
+        border-color: $primary !important;
+        background: $primary !important;
+        color: #fff !important;
+      }
+
+      &:after {
+        content: "";
+        display: none;
+        width: 2.1rem;
+        height: 2.1rem;
+        margin-left: 2.1rem;
+        background: url(../img/icons/close-cirlce.svg) 0 0 no-repeat;
+        background-size: contain;
+      }
+
+      @include bp(xs) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-width: 1rem;
+      }
+    }
+  }
+}
+
+// article
+.article {
+  margin-bottom: 5.2rem;
+
+  @include bp(md) {
+    margin-bottom: 4.9rem;
+  }
+
+  &__title {
+    margin: 2.1rem 0 1.8rem;
+    line-height: 3.3rem;
+    display: inline-flex;
+    letter-spacing: 0.095rem;
+  }
+
+  &__body {
+    margin: 0 18% 0 0.1rem;
+
+    @include bp(md) {
+      margin-left: 0;
+    }
+
+    @include bp(xs) {
+      margin-right: 0;
+    }
+  }
+
+  &.d-lg-grid {
+    @include bp(lg-up) {
+      margin-bottom: 9.4rem;
+
+      .article__body {
+        padding-left: 3.5rem;
+        margin-right: 12%;
+      }
+
+      .order-lg-2 + .article__body {
+        margin-right: 18%;
+        padding-left: 0;
+
+        .article__title {
+          margin-top: 1.7rem;
+        }
+      }
+
+      .article__title {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+
+  &_sm {
+    margin-bottom: 3.9rem;
+
+    .article__title {
+      line-height: 2rem;
+      letter-spacing: 0.035rem;
+      margin: 1.7rem 0 0;
+    }
+
+    .article__body {
+      margin-right: 5%;
+    }
+  }
+}
+
+// article-page
+.aside {
+  width: 29%;
+  flex-shrink: 0;
+  padding: 1.5rem 0;
+}
+
+.article-page {
+  padding-top: 0.5rem;
+  margin-bottom: 10.2rem;
+
+  @include bp(sm) {
+    line-height: 2.4rem;
+    letter-spacing: 0.057rem;
+    margin-bottom: 9.1rem;
+  }
+
+  p {
+    margin-bottom: 2.2rem;
+
+    @include bp(sm) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__title {
+    padding-bottom: 0.3rem;
+
+    @include bp(sm) {
+      margin: 1.3rem -1.5rem 3rem 0;
+    }
+  }
+
+  &__categories {
+    margin: 5.9rem 0 8.5rem;
+
+    @include bp(sm) {
+      margin: 4.8rem 0 5.9rem;
+    }
+  }
+
+  &__image {
+    margin-bottom: 4rem;
+  }
+
+  &__share {
+    @include bp(sm) {
+      margin-top: -0.4rem;
+    }
+  }
+}
+
+.category-group_sm {
+  gap: 2.2rem;
+}
+
+.favorite-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid $secondary;
+  margin-right: 1.7rem;
+  padding-top: 0.2rem;
+
+  @include bp(hv) {
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  &.active {
+    background: $secondary;
+  }
+}
+
+.uSocial-Share {
+  margin-top: 3.2rem !important;
+}
+
+#uSocial .uscl-bar.uscl-size32 .ico_uscl,
+.uSocial-Share .uscl-bar.uscl-size32 .ico_uscl {
+  width: 2.9rem !important;
+  height: 2.9rem !important;
+  font-size: 2rem !important;
+}

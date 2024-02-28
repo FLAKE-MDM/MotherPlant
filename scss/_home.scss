@@ -1,0 +1,499 @@
+.preview {
+  &-slider {
+    .swiper-slide {
+      z-index: 1;
+      background: url(../img/content/slide.jpg) 50% 50% no-repeat;
+      background-size: cover;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        width: 50%;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(to left, rgba(44, 46, 51, 0) 0%, #2c2e33 100%);
+
+        @include bp(md) {
+          background: linear-gradient(to bottom, rgba(44, 46, 51, 0) 0%, #2c2e33 100%);
+          width: 100%;
+          top: 40%;
+        }
+      }
+
+      @include bp(md) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+
+    @include bp(md) {
+      text-transform: none;
+      font-size: 1.4rem;
+      background: $secondary;
+      border-color: $secondary;
+      border-radius: 1.3rem;
+      width: auto;
+      padding: 0.3rem 2.8rem;
+    }
+  }
+
+  &__content {
+    padding: 12.3rem 0 7.4rem;
+    width: 1212px;
+    max-width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.06rem;
+    line-height: 2.4rem;
+
+    @include bp(md) {
+      padding: 23.8rem 0 1.3rem;
+    }
+
+    p {
+      @include bp(lg-up) {
+        margin: 0 0.3rem 3.7rem;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.6rem;
+
+    @include bp(md) {
+      margin-bottom: 1.8rem;
+      font-size: 2.5rem;
+      line-height: 2.9rem;
+    }
+  }
+}
+
+// advantages
+.advantages {
+  padding: 1.4rem 0 1.3rem;
+  background: #839261;
+
+  &-group {
+    margin-left: -0.6rem;
+
+    @include bp(md) {
+      flex-wrap: wrap;
+      gap: 2rem 5.5rem;
+      justify-content: center;
+    }
+  }
+
+  &-item {
+    letter-spacing: 0.05rem;
+
+    &__icon {
+      margin-right: 1rem;
+    }
+  }
+}
+
+// about-section
+.about-section {
+  display: grid;
+  grid-template-columns: 40.95% auto;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.4rem 1.6rem;
+  margin: 5.9rem 0 13rem;
+
+  @include bp(md) {
+    grid-gap: 1.4rem 1.5rem;
+    grid-template-columns: 50% auto;
+    padding: 0;
+    margin: 4.2rem 0.5rem 6.1rem;
+  }
+
+  @include bp(xs) {
+    grid-template-columns: 100%;
+  }
+}
+
+.about-item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 25.2rem;
+
+  @include bp(hv) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-radius: 1.8rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    position: absolute;
+    min-width: 13.5rem;
+    padding: 1.3rem 5.7rem 1.8rem 2.1rem;
+    bottom: 0.1rem;
+    left: 0.1rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.095rem;
+    border-radius: 0 0 1.7rem 1.7rem;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #fff 99.27%);
+
+    @include bp(md) {
+      line-height: 3.3rem;
+      padding: 1rem 5.7rem 0.9rem 2.1rem;
+    }
+
+    @include bp(xs) {
+      padding: 1rem;
+    }
+
+    &.w-100 {
+      width: 95% !important;
+
+      @include bp(md) {
+        width: 100% !important;
+        padding-right: 1.5rem;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 0%, #fff 99.27%);
+      }
+    }
+
+    @include bp(md) {
+    }
+  }
+
+  &_vertical {
+    grid-row: span 2;
+    position: relative;
+
+    @include bp(sm) {
+      // height: 30.7rem;
+      // margin-bottom: 2.4rem;
+    }
+  }
+}
+
+// problems
+.problems {
+  margin-bottom: 13.8rem;
+
+  @include bp(xxl-up) {
+    padding-right: 2rem;
+  }
+
+  @include bp(md) {
+    margin-bottom: 6.2rem;
+  }
+
+  &__image {
+    padding: 0.4rem 3% 0 0;
+
+    @include bp(md) {
+      padding-right: 5.3%;
+    }
+  }
+}
+
+// category
+.category {
+  &-section {
+    margin-bottom: 11.2rem;
+
+    @include bp(md) {
+      margin-bottom: 6rem;
+    }
+
+    .title {
+      @include bp(md) {
+        margin-left: 1.1rem;
+      }
+    }
+  }
+
+  &-group {
+    gap: 1.6rem 1.8rem;
+
+    @include bp(xxxl-up) {
+      margin: 0 0.3rem 0 -1.4rem;
+    }
+
+    @include bp(md) {
+      padding: 0.6rem 1.5rem 0 0;
+      grid-gap: 1.3rem 0;
+    }
+  }
+
+  &-item {
+    padding: 1.2rem 3% 1rem 1rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 4.4rem;
+    width: 32%;
+
+    @include bp(hv) {
+      &:hover {
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+
+    @include bp(md) {
+      width: 45%;
+    }
+
+    @include bp(sm) {
+      width: 100%;
+      border-radius: 1.2rem;
+      justify-content: flex-start !important;
+      padding-left: 3.7rem;
+    }
+
+    &__title {
+      font-size: 1.7rem;
+      margin-left: 1.8rem;
+      letter-spacing: 0.07rem;
+
+      @include bp(md) {
+        margin-left: 2.4rem;
+      }
+    }
+  }
+}
+
+// popular-section
+.popular-section {
+  @include bp(md) {
+    margin-bottom: 4.5rem;
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 61rem;
+    max-width: 100%;
+    padding-top: 0.4rem;
+    margin-bottom: 3.6rem;
+    letter-spacing: 0.05rem;
+
+    @include bp(sm) {
+      padding: 2.4rem 0.6rem 0.5rem;
+    }
+  }
+
+  &__group {
+    margin-bottom: 4.8rem;
+
+    @include bp(sm) {
+      grid-gap: 0.9rem;
+      padding: 0 0.5rem 0.2rem 0.1rem;
+    }
+  }
+
+  .catalogue-item {
+    @include bp(sm) {
+      &:first-child {
+        order: 2;
+      }
+    }
+  }
+}
+
+// calculator-section
+.calculator-section {
+  background: url(../img/bg-calculator-section.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  padding: 9.7rem 0 8.7rem;
+  margin: 10rem 0 15.9rem;
+  letter-spacing: 0.025rem;
+
+  @include bp(md) {
+    margin: 0 0 6rem;
+    padding: 3.7rem 0.2rem 4.5rem;
+    background-position: 27% 50%;
+  }
+
+  &_margin {
+    margin: 9.5rem 0 16.5rem;
+
+    @include bp(md) {
+      margin: 8.2rem 0 6rem;
+    }
+
+    @include bp(xs) {
+      background-position: 50% 50%;
+    }
+  }
+
+  &_margin-md {
+    margin: 9.5rem 0 14.1rem;
+
+    @include bp(md) {
+      margin: 4.2rem 0 6rem;
+      padding-top: 3.9rem;
+    }
+
+    @include bp(xs) {
+      background-position: 50% 50%;
+    }
+  }
+
+  &__text {
+    width: 50%;
+
+    @include bp(xxl-up) {
+      margin-left: -1.6rem;
+    }
+
+    @include bp(md) {
+      width: 64%;
+    }
+
+    @include bp(xs) {
+      width: 100%;
+    }
+
+    p {
+      @include bp(md) {
+        margin-left: -0.2rem;
+        margin-bottom: 2.8rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    padding-top: 0.1rem;
+    margin-left: -0.2rem;
+  }
+}
+
+// text-section
+.text-section {
+  border: 1px solid #c4b166;
+  border-radius: 1.3rem;
+  padding: 4.1rem 3.2rem 3.6rem;
+  margin: 10rem 0 11.1rem;
+  letter-spacing: 0.055rem;
+  line-height: 2.4rem;
+
+  @include bp(md) {
+    margin: 4.2rem 0 6.2rem;
+    padding: 2.9rem 2.4rem 1.4rem;
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+
+  &__title {
+    padding-bottom: 0.2rem;
+
+    @include bp(md) {
+      padding-bottom: 0.4rem;
+      margin-left: 0.1rem;
+    }
+  }
+}
+
+// subscription-section
+.subscription {
+  &-section {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+    background: #a7985b;
+    padding: 3.4rem 0 4.8rem;
+    letter-spacing: 0.055rem;
+
+    @include bp(md) {
+      padding: 3.1rem 0 3.2rem;
+    }
+
+    &.success {
+      background: #849362;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      background: url(../img/subscription-before.png) 100% 0 no-repeat;
+      background-size: auto 100%;
+      transition: all 0.3s ease-out;
+      opacity: 0;
+    }
+
+    &__title {
+      margin-bottom: 1.8rem;
+
+      @include bp(md) {
+        font-size: 2.3rem;
+        line-height: 3.1rem;
+        letter-spacing: 0.045rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__content {
+      margin: 0 -0.3rem;
+    }
+
+    &__success {
+      margin: 3.4rem -0.4rem;
+    }
+  }
+
+  &-form {
+    width: 73.3rem;
+    max-width: 100%;
+    padding-top: 0.8rem;
+
+    @include bp(md) {
+      padding: 0 0.4rem 0 0;
+      margin-top: -0.2rem;
+    }
+
+    &__input {
+      border: 1px solid #fff;
+      flex-grow: 1;
+      padding: 1.7rem 1.5rem;
+      letter-spacing: 0.1rem;
+
+      @include bp(md) {
+        padding: 1.4rem 1.5rem;
+      }
+    }
+
+    &__btn {
+      width: auto;
+      padding-left: 7rem;
+      padding-right: 7rem;
+      flex-shrink: 0;
+
+      @include bp(md) {
+        width: auto;
+        padding: 1rem 1.95rem;
+      }
+    }
+  }
+}

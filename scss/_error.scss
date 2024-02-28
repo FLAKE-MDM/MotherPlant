@@ -1,0 +1,52 @@
+.error-section {
+  padding-right: 45%;
+  position: relative;
+  padding-top: 4.3rem;
+  margin: 5rem 0 14.8rem;
+
+  @include bp(md) {
+    padding: 0;
+    margin: 2.5rem 0 6.5rem;
+    letter-spacing: 0.055rem;
+
+    .title {
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40.8%;
+
+    @include bp(md) {
+      position: static;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 4.8rem;
+    }
+  }
+
+  &__buttons {
+    gap: 0 2.1rem;
+    margin-top: 8rem;
+
+    @include bp(md) {
+      margin-top: 6.6rem;
+    }
+
+    @include bp(xs) {
+      gap: 0 1rem;
+    }
+
+    .btn {
+      max-width: 48%;
+
+      @include bp(md) {
+        flex-grow: 1;
+      }
+    }
+  }
+}

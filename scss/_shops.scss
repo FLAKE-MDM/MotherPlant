@@ -1,0 +1,84 @@
+.shop {
+  &-map {
+    height: 49.6rem;
+
+    @include bp(md) {
+      height: 35rem;
+    }
+
+    @include bp(sm) {
+      height: 25rem;
+      margin: 0 -3.5rem 5.5rem;
+    }
+
+    @include bp(xs) {
+      margin: 0 -1.5rem 5.5rem;
+    }
+  }
+
+  &-filter {
+    margin: 5.9rem 0 1.3rem;
+
+    @include bp(sm) {
+      margin: -1.5rem 0 3.3rem;
+    }
+  }
+
+  &-group {
+    margin-bottom: 16.5rem;
+  }
+
+  &-item {
+    padding: 3.9rem 0 3.9rem 0.2rem;
+    border-bottom: 1px solid #e6e6e6;
+    display: grid;
+    grid-template-columns: 20.1% 9% 44.5% auto;
+    grid-gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.4rem;
+
+    @include bp(md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 1.4rem 0;
+      margin-bottom: 1.6rem;
+    }
+
+    .text_size-lg {
+      color: #272623;
+      margin-top: 0.1rem;
+      letter-spacing: 0.15rem;
+
+      @include bp(sm) {
+        margin: 0.7rem 0 1.2rem;
+      }
+    }
+
+    &.d-none {
+      display: none !important;
+    }
+
+    &__info {
+      @include bp(md) {
+        order: -2;
+        width: 50%;
+      }
+    }
+
+    &__link {
+      @include bp(md) {
+        order: -1;
+        text-align: right;
+        width: 50%;
+        margin-top: 1.7rem;
+      }
+    }
+
+    &__city {
+      @include bp(md) {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}

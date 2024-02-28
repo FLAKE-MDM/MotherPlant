@@ -1,0 +1,152 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 1.3rem 2.4rem 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #fff;
+  flex-shrink: 0;
+  font: 300 1.7rem/1.2 "Oswald", sans-serif;
+  width: 26.1rem;
+  max-width: 100%;
+  letter-spacing: 0.07rem;
+
+  @include bp(hv) {
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    background: gray;
+    color: gray;
+  }
+
+  &_dark {
+    border: 1px solid $dark;
+    background: $dark;
+
+    @include bp(hv) {
+      &:hover {
+        color: #fff;
+        background: darken($color: $dark, $amount: 10);
+        border-color: darken($color: $dark, $amount: 10);
+      }
+    }
+  }
+
+  &_outline {
+    border-color: $secondary;
+    color: #272623;
+    background: transparent;
+
+    @include bp(hv) {
+      &:hover {
+        color: #fff;
+        background: $secondary;
+        border-color: $secondary;
+      }
+    }
+  }
+
+  &_outline-inversion {
+    border-color: #fff;
+    background: transparent;
+
+    @include bp(hv) {
+      &:hover {
+        color: $secondary;
+        background: #fff;
+        border-color: $secondary;
+      }
+    }
+  }
+
+  &_primary {
+    background: linear-gradient(45deg, #6f7d4f 0%, #839261 50%, #6f7d4f 100%);
+    background-size: 200% 100%;
+    border-color: transparent;
+
+    @include bp(hv) {
+      &:hover {
+        background-position: right center;
+      }
+    }
+  }
+
+  &_primary-second {
+    background: linear-gradient(45deg, #5e6945 0%, #717e54 25%, #849362 50%, #717e54 75%, #5e6945 100%);
+    background-size: 200% 100%;
+    border-color: transparent;
+
+    @include bp(hv) {
+      &:hover {
+        background-position: right center;
+      }
+    }
+  }
+
+  &_radius {
+    border-radius: 4rem;
+  }
+
+  &_light {
+    background: #f5f5f5;
+    color: $secondary;
+    border-color: #e8e8e8;
+    color: #646361;
+
+    @include bp(hv) {
+      &:hover {
+        background: $primary;
+        border-color: $primary;
+      }
+    }
+
+    &.active {
+      background: $primary;
+      border-color: $primary;
+      color: #fff;
+    }
+  }
+
+  &_size {
+    &-xs {
+      padding: 0.4rem 1.7rem;
+      width: auto;
+      font: 700 1.4rem/1 "PT Sans", sans-serif;
+    }
+
+    &-sm {
+      padding: 0.9rem 3.15rem;
+      letter-spacing: 0.03rem;
+      width: auto;
+      color: #646361;
+      font: 400 1.4rem "PT Sans", sans-serif;
+    }
+
+    &-md {
+      padding: 1rem 2.4rem 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.03rem;
+    }
+
+    &-lg {
+      width: auto;
+      padding: 1.8rem 3.2rem 2.1rem;
+    }
+  }
+
+  &__icon {
+    margin: -1rem 1.4rem -1.7rem -0.5rem;
+  }
+}

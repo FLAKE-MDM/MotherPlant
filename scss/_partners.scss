@@ -1,0 +1,127 @@
+// partners
+.partners {
+  margin-bottom: 15.6rem;
+
+  &__image {
+    margin: -1rem 0 5.3rem;
+
+    @include bp(md) {
+      margin-top: 0;
+    }
+
+    @include bp(sm) {
+      margin-left: -3.5rem;
+      margin-right: -3.5rem;
+    }
+
+    @include bp(xs) {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+    }
+  }
+
+  &__text {
+    width: 59rem;
+    max-width: 100%;
+    margin-bottom: 7.9rem;
+
+    p {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__content {
+    grid-gap: 0 5%;
+    margin-bottom: 7.3rem;
+  }
+
+  &-item {
+    @include bp(md) {
+      margin-bottom: 5rem;
+    }
+
+    &__num {
+      width: 6.2rem;
+      height: 6.2rem;
+      border-radius: 50%;
+      color: $secondary;
+      border: 1px solid $secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 2.8rem;
+
+      @include bp(md) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &-section {
+    &__text {
+      @include bp(lg-up) {
+        padding: 0.4rem 22% 0;
+      }
+    }
+
+    &__content {
+      margin: 12.9rem auto 13.3rem;
+      width: 63.2rem;
+      max-width: 100%;
+
+      @include bp(md) {
+        margin: 5rem auto;
+      }
+
+      .title {
+        margin-bottom: 1.5rem;
+
+        @include bp(md) {
+          margin-bottom: 2rem;
+        }
+      }
+
+      p {
+        margin-bottom: 3.3rem;
+
+        @include bp(md) {
+          line-height: 2.4rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      &_margin {
+        margin: 9.5rem auto 19.8rem;
+
+        @include bp(md) {
+          margin: 7.4rem 0 13.3rem;
+        }
+      }
+    }
+  }
+
+  &-logos {
+    margin: 4.5rem 0 12.8rem;
+    gap: 2rem 3rem;
+
+    @include bp(md) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.logo-item {
+  @include bp(sm) {
+    max-width: 40%;
+  }
+}

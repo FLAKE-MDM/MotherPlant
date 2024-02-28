@@ -1,0 +1,335 @@
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-position: 0 0;
+  display: inline-block;
+  flex-shrink: 0;
+
+  &_double {
+    position: relative;
+
+    @include bp(hv) {
+      &:hover,
+      a:hover > & {
+        &:before {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-out;
+    }
+    &:after {
+      opacity: 0;
+    }
+  }
+
+  .active > &,
+  .components-item.active & {
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  @include bp(hv) {
+    .sort-dropdown__link:hover &,
+    .fake-select__item:hover & {
+      &:before {
+        opacity: 0;
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.icon-map {
+  width: 1.5rem;
+  height: 2rem;
+
+  &:before {
+    background-image: url(../img/icons/map.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/map-inversion.svg);
+  }
+}
+
+.icon-map-dark {
+  width: 1.5rem;
+  height: 2rem;
+
+  &:before {
+    background-image: url(../img/icons/map-dark.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/map-primary.svg);
+  }
+}
+
+.icon-search {
+  width: 2.1rem;
+  height: 2.1rem;
+  background-image: url(../img/icons/search.svg);
+}
+
+.icon-search-inversion {
+  width: 2.1rem;
+  height: 2.1rem;
+  background-image: url(../img/icons/search-inversion.svg);
+}
+
+.icon-caret-next,
+.icon-caret-prev {
+  width: 1.3rem;
+  height: 2.1rem;
+  background-image: url(../img/icons/caret-next.svg);
+}
+
+.icon-caret-prev {
+  transform: rotate(180deg);
+}
+
+.icon-pipette {
+  width: 3.4rem;
+  height: 3.8rem;
+  background-image: url(../img/icons/pipette.svg);
+}
+
+.icon-email {
+  width: 4.43rem;
+  height: 4.43rem;
+  background-image: url(../img/icons/email.svg);
+}
+
+.icon-tg {
+  width: 4.43rem;
+  height: 4.43rem;
+  background-image: url(../img/icons/tg.svg);
+}
+
+.icon-youtube {
+  width: 4.43rem;
+  height: 4.43rem;
+  background-image: url(../img/icons/youtube.svg);
+}
+
+.icon-oil {
+  width: 1.4rem;
+  height: 2.6rem;
+  background-image: url(../img/icons/oil.svg);
+}
+
+.icon-capsules {
+  width: 1.9rem;
+  height: 2rem;
+  background-image: url(../img/icons/capsules.svg);
+
+  &_white {
+    background-image: url(../img/icons/capsules-white.svg);
+  }
+}
+
+.icon-products {
+  width: 1.8rem;
+  height: 2.1rem;
+  background-image: url(../img/icons/products.svg);
+}
+
+.icon-chocolate {
+  width: 2.4rem;
+  height: 2.5rem;
+  background-image: url(../img/icons/chocolate.svg);
+
+  &_white {
+    background-image: url(../img/icons/chocolate-white.svg);
+  }
+}
+
+.icon-cosmetics {
+  width: 1.8rem;
+  height: 2.2rem;
+  background-image: url(../img/icons/cosmetics.svg);
+  &_white {
+    background-image: url(../img/icons/cosmetics-white.svg);
+  }
+}
+
+.icon-sort-decreas,
+.icon-sort-increas {
+  width: 1.9rem;
+  height: 1.5rem;
+
+  &:before {
+    background-image: url(../img/icons/sort.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/sort-primary.svg);
+  }
+}
+
+.icon-sort-increas {
+  transform: scale(1, -1);
+}
+
+.icon-filter {
+  width: 2.2rem;
+  height: 1.5rem;
+  margin-left: 1.45rem;
+  background-image: url(../img/icons/filter.svg);
+}
+
+.icon-close {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url(../img/icons/close.svg);
+}
+
+.icon-natural {
+  width: 3.8rem;
+  height: 5.1rem;
+  background-image: url(../img/icons/natural.svg);
+
+  @include bp(md) {
+    width: 2.9rem;
+    height: 3.6rem;
+  }
+}
+
+.icon-quality {
+  width: 4.4rem;
+  height: 4.1rem;
+  background-image: url(../img/icons/quality.svg);
+
+  @include bp(md) {
+    width: 4rem;
+    height: 3.8rem;
+  }
+}
+
+.icon-thc {
+  width: 5.3rem;
+  height: 5.3rem;
+  background-image: url(../img/icons/thc.svg);
+
+  @include bp(md) {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.icon-kosher {
+  width: 4.3rem;
+  height: 5rem;
+  background-image: url(../img/icons/kosher.svg);
+
+  @include bp(md) {
+    width: 3.3rem;
+    height: 3.8rem;
+  }
+}
+
+.icon-halal {
+  width: 4.6rem;
+  height: 4.6rem;
+  background-image: url(../img/icons/halal.svg);
+
+  @include bp(md) {
+    width: 3.9rem;
+    height: 3.9rem;
+  }
+}
+
+.icon-vegans {
+  width: 5.8rem;
+  height: 3.9rem;
+  background-image: url(../img/icons/vegans.svg);
+
+  @include bp(md) {
+    width: 3.9rem;
+    height: 2.7rem;
+  }
+}
+
+.icon-heart {
+  width: 3.2rem;
+  height: 2.7rem;
+
+  &:before {
+    background-image: url(../img/icons/heart.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/heart-active.svg);
+  }
+}
+
+.icon-info {
+  width: 3.3rem;
+  height: 3.7rem;
+  background-image: url(../img/icons/info.svg);
+}
+
+.icon-doc {
+  width: 2.8rem;
+  height: 3.9rem;
+  background-image: url(../img/icons/doc.svg);
+
+  @include bp(md) {
+    width: 2.2rem;
+    height: 3.1rem;
+  }
+}
+
+.icon-download {
+  width: 2.8rem;
+  height: 2.8rem;
+
+  &:before {
+    background-image: url(../img/icons/download.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/download-primary.svg);
+  }
+}
+
+.icon- {
+  width: rem;
+  height: rem;
+  background-image: url(../img/icons/.svg);
+}
+
+.icon- {
+  width: rem;
+  height: rem;
+
+  &:before {
+    background-image: url(../img/icons/.svg);
+  }
+
+  &:after {
+    background-image: url(../img/icons/-active.svg);
+  }
+}

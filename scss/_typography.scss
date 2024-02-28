@@ -1,0 +1,159 @@
+a {
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  color: #646361;
+
+  &:not(.btn):active {
+    text-decoration: none !important;
+    color: inherit !important;
+    background-color: transparent !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  @include bp(hv) {
+    &:hover {
+      color: $primary;
+
+      &.text_inversion {
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.link_underline {
+  text-decoration: underline;
+
+  @include bp(hv) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+.title {
+  font: 500 3rem/3.9rem "Oswald", sans-serif;
+  letter-spacing: 0.06rem;
+
+  &_size {
+    &-xs {
+    }
+    &-sm {
+      font-size: 1.7rem;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.03rem;
+    }
+    &-md {
+      font-size: 2.4rem;
+      line-height: 1.5;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+    }
+    &-lg {
+    }
+    &-xl {
+    }
+  }
+
+  &_mobile {
+    @include bp(md) {
+      font: 500 3rem/3.9rem "Oswald", sans-serif;
+      letter-spacing: 0.06rem;
+    }
+  }
+}
+.text {
+  &_upper {
+    text-transform: uppercase;
+  }
+  // size
+  &_size {
+    &-xs {
+    }
+    &-sm {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    &-md {
+    }
+    &-lg {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+    &-xl {
+    }
+  }
+
+  &_styling {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  // colors
+  &_primary {
+    color: $primary;
+  }
+
+  &_secondary {
+    color: $secondary;
+  }
+
+  &_inversion {
+    color: #fff;
+  }
+
+  &_dark {
+    color: #272623;
+  }
+
+  &_lighten {
+    color: #646361;
+  }
+
+  // weight
+  &_light {
+    font-weight: 300;
+  }
+
+  &_normal {
+    font-weight: 400;
+  }
+
+  &_mediumbold {
+    font-weight: 500;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  // alignment
+  &_center {
+    text-align: center;
+
+    &-sm {
+      @include bp(sm) {
+        text-align: center;
+      }
+    }
+  }
+  &_left {
+    text-align: left !important;
+
+    &-sm {
+      @include bp(sm) {
+        text-align: left;
+      }
+    }
+  }
+  &_right {
+    text-align: right !important;
+  }
+}
